@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-     <section class="form signup">
+     <section class="form login">
         <header >
         Real time chat App
        </header>
@@ -18,16 +18,6 @@
             <div class="error-text">
                 This is an error message!
             </div> 
-            <div class="name-details">
-                <div class="field input">
-                   <label>First Name</label> 
-                  <input type="text" name="first_name" placeholder=""First Name">
-                </div>
-                <div class="field input">
-                    <label>Last Name</label> 
-                   <input type="text" name="last_name" placeholder=""Last Name">
-                 </div>
-                 </div>
                  <div class="field input">
                     <label>Email Adress</label> 
                    <input type="email" name="Email" placeholder=""Enter Your email">
@@ -35,18 +25,15 @@
                  <div class="field input">
                     <label>Password</label> 
                    <input type="password" name="Password" placeholder=""Password">
-                   <i class="fas fa-eye"></i>
-                </div>
-                 <div class="field image">
-                    <label>select Image</label> 
-                   <input type="file">
-                 </div>
+                <i class="fas fa-eye"></i>
+                  </div>
                  <div class="field button"> 
-                    <input type="submit" value="Continue To Chat">
+                    <input type="submit" value="Log in">
                  </div>
         </form>
-        <div class="link">Already signed up? <a href="#">Login now</a></div>
+        <div class="link">Not yet signed up? <a href="#">Signup now</a></div>
      </section>
     </div>
+    <script src="javascript/pass-show-hide.js"></script>
 </body>
 </html>
