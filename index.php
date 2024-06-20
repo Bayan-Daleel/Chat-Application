@@ -1,53 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" hash="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="javascript.js" type="text/javascript"></script>
-    <title>Real time chat App</title>
-</head>
+<?php 
+include_once "header.php";
+?>
 <body>
     <div class="wrapper">
      <section class="form signup">
         <header >
         Real time chat App
        </header>
-        <form action="#">
-            <div class="error-text">
-                This is an error message!
-            </div> 
+        <form action="#" enctype="multipart/form-data">
+            <div class="error-text"></div> 
             <div class="name-details">
                 <div class="field input">
                    <label>First Name</label> 
-                  <input type="text" name="first_name" placeholder=""First Name">
+                  <input type="text" name="fname" placeholder=""First Name"  required >
                 </div>
                 <div class="field input">
                     <label>Last Name</label> 
-                   <input type="text" name="last_name" placeholder=""Last Name">
+                   <input type="text" name="lname" placeholder=""Last Name" required>
                  </div>
                  </div>
                  <div class="field input">
                     <label>Email Adress</label> 
-                   <input type="email" name="Email" placeholder=""Enter Your email">
+                   <input type="email" name="email" placeholder=""Enter Your email" required>
                  </div>
                  <div class="field input">
                     <label>Password</label> 
-                   <input type="password" name="Password" placeholder=""Password">
+                   <input type="password" name="password" placeholder=""Password" required>
                    <i class="fas fa-eye"></i>
                 </div>
                  <div class="field image">
                     <label>select Image</label> 
-                   <input type="file">
+                   <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
                  </div>
                  <div class="field button"> 
-                    <input type="submit" value="Continue To Chat">
+                    <input type="submit"  value="Continue To Chat">
                  </div>
         </form>
-        <div class="link">Already signed up? <a href="#">Login now</a></div>
+        <div class="link">Already signed up? <a href="login.php">Login now</a></div>
      </section>
     </div>
     <script src="javascript/pass-show-hide.js"></script>
+    <script src="javascript/singup.js"></script>
+
 </body>
 </html>
