@@ -22,11 +22,11 @@ sendBtn.onclick = ()=>{
 };
     
 chatBox.onmouseenter = ()=>{
-    chatBox.classList.add('active');
+    chatBox.classList.add("active");
 }
-    
-chatBox.onmouleave = ()=>{
-    chatBox.classList.remove('active');
+
+chatBox.onmouseleave = ()=>{
+    chatBox.classList.remove("active");
 }
 setInterval(()=>{
     let xhr = new XMLHttpRequest();
@@ -36,7 +36,7 @@ setInterval(()=>{
           if(xhr.status === 200){
              let data = xhr.response;
                 chatBox.innerHTML = data;
-                if(!chatBox.classList.contains('active')){
+                if(!chatBox.classList.contains("active")){
                 scrollBottom();
                 }
           }
